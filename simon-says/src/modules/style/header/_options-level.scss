@@ -1,0 +1,70 @@
+@use '../common/0-common.scss' as *;
+
+.option-item-drop {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding: 2px 5px;
+    gap: 5px;
+ 
+    .drop-item {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        cursor: pointer;
+
+        .drop-item-title {
+            @include fontStyle (16px, 600, 1px, #ffffff);
+            transition: color .5s ease-in-out;
+        }
+    }
+
+    .drop-item:hover .drop-item-title {
+        color: #ff9b36;
+    }
+}
+//animation 
+
+.anim--open {
+    animation: animOpen 0.5s ease forwards;
+}
+
+@keyframes animOpen {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+
+
+.anim--close {
+    animation: animClose  .5s ease;
+}
+    
+
+@keyframes animClose {
+    0% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+  }
+
+
+

@@ -1,0 +1,68 @@
+@import './info';
+@import './input';
+@import './keypad';
+@import './answer-key';
+
+.page-main {
+  max-width: 1440px;
+  min-width: 320px;
+  width: 100%;
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  padding: 120px 80px 60px 80px;
+  margin-bottom: 20px ;
+  gap: 60px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .page-main {
+    padding: 120px 20px 0 20px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .page-main {
+    padding: 120px 8px 0 8px;
+
+    .main-input {
+      .input-field {
+        width: 80%;
+    }
+    
+      .input-style-border {
+        width: 80%;
+    
+    }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 640px) {
+  .page-main {
+    padding: 10px 8px 0 8px;
+    gap: 20px;
+    .main-input {
+      .input-field {
+        width: 90%;
+    }
+    
+      .input-style-border {
+        width: 90%;
+    
+    }
+    }
+  }
+
+
+
+
+}

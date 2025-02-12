@@ -1,0 +1,78 @@
+@import './start-title';
+@import './start-options';
+@import './start-btn';
+
+.page-start {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba( 000, 000, 000, 0.5);
+
+    animation: openStartPopup 1s ease;
+
+    .start__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 20px;
+
+        padding: 30px;
+
+        border: 2px solid #ffffff;
+
+        border-radius: 5px;
+    }
+}
+
+@keyframes openStartPopup {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.anim-start--close {
+    animation: closeStartPopup .5s ease;
+}
+
+
+@keyframes closeStartPopup {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .page-start {
+      padding: 0 20px 0 20px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .page-start {
+      padding: 0 8px 0 8px;
+  
+    }
+  
+  
+  
+  
+  }

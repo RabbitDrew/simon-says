@@ -1,0 +1,36 @@
+@use '../common/mixins' as *; 
+
+.main-answer {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .answer-btn {
+        max-width: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 10px 10px;
+
+        border: 1px solid #ffffff;
+
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        border-radius: 5px;
+        .answer-btn-title {
+            @include fontStyle (18px, 600, 1, #ffffff)
+        }
+    }
+
+    .answer-btn:hover  {
+        background-color: #ff9b36;
+        border-color: #ff9b36;
+    }
+
+}

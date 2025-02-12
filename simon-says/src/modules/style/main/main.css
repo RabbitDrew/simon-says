@@ -1,0 +1,420 @@
+.page {
+  min-width: 320px;
+  max-width: 100%;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Noto Sans Mono", serif;
+  font-size: 15px;
+  color: #ffffff;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: #ffffff;
+  position: relative;
+  z-index: -2;
+}
+
+.page::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../../../assets/simon-says-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(75%);
+  z-index: -1;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  text-decoration: none;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+:root {
+  /*colors*/
+  --accent-color: #ffcda2;
+  --header-font-color: #181c29;
+  --hover-header-bg-color: rgba(0, 153, 255, 0.2);
+  /*main-section*/
+  --main-bg-color: #0099ff;
+}
+
+/*scroll styles
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 205, 162, 0.7);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 205, 162, 1);
+}
+*/
+.main-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 40px;
+}
+.main-info .info-level {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 5px;
+}
+.main-info .info-level .level-title {
+  font-size: 23px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+.main-info .info-level .level-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  padding-bottom: 2px;
+}
+.main-info .info-round {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 5px;
+}
+.main-info .info-round .round-title {
+  font-size: 23px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+.main-info .info-round .round-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  padding-bottom: 2px;
+}
+
+.page {
+  min-width: 320px;
+  max-width: 100%;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Noto Sans Mono", serif;
+  font-size: 15px;
+  color: #ffffff;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: #ffffff;
+  position: relative;
+  z-index: -2;
+}
+
+.page::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../../../assets/simon-says-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(75%);
+  z-index: -1;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  text-decoration: none;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+:root {
+  /*colors*/
+  --accent-color: #ffcda2;
+  --header-font-color: #181c29;
+  --hover-header-bg-color: rgba(0, 153, 255, 0.2);
+  /*main-section*/
+  --main-bg-color: #0099ff;
+}
+
+/*scroll styles
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 205, 162, 0.7);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 205, 162, 1);
+}
+*/
+.main-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-input .input-field {
+  width: 50%;
+  background: transparent;
+  border: none;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+.main-input .input-field::placeholder {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+.main-input .input-field:focus {
+  outline: none;
+}
+.main-input .input-style-border {
+  width: 50%;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+.main-input .input-field:focus + .input-style-border {
+  background-color: #ff9b36;
+}
+
+.main-keypad {
+  max-width: 570px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}
+.main-keypad .keyapad-num,
+.main-keypad .keyapad-letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.main-keypad .keyapad-num .key,
+.main-keypad .keyapad-letter .key {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.main-keypad .keyapad-num .key:hover,
+.main-keypad .keyapad-letter .key:hover {
+  background-color: #ff9b36;
+  border-color: #ff9b36;
+}
+
+.key--anim {
+  animation: changeColor 0.45s ease-in-out;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: none;
+    border-color: #ffffff;
+  }
+  50% {
+    background-color: #ff9b36;
+    border-color: #ff9b36;
+  }
+  100% {
+    background-color: none;
+    border-color: #ffffff;
+  }
+}
+.disable {
+  pointer-events: none;
+}
+
+.main-answer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-answer .answer-btn {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+}
+.main-answer .answer-btn .answer-btn-title {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1;
+  color: #ffffff;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+.main-answer .answer-btn:hover {
+  background-color: #ff9b36;
+  border-color: #ff9b36;
+}
+
+.page-main {
+  max-width: 1440px;
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 120px 80px 60px 80px;
+  margin-bottom: 20px;
+  gap: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+  .page-main {
+    padding: 120px 20px 0 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-main {
+    padding: 120px 8px 0 8px;
+  }
+  .page-main .main-input .input-field {
+    width: 80%;
+  }
+  .page-main .main-input .input-style-border {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .page-main {
+    padding: 10px 8px 0 8px;
+    gap: 20px;
+  }
+  .page-main .main-input .input-field {
+    width: 90%;
+  }
+  .page-main .main-input .input-style-border {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

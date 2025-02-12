@@ -1,0 +1,106 @@
+.result-title__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.result-title__wrapper .result-title {
+  font-size: 28px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+
+.result-score__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.result-score__wrapper .score-title {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+
+.result-next-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.result-next-btn .next-btn-title {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+
+.result-next-btn:hover {
+  background-color: #ff9b36;
+  border-color: #ff9b36;
+}
+
+.main-result {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: openResultPopup 1s ease;
+}
+.main-result .result__win {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}
+
+@keyframes openResultPopup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main-result--close {
+  animation: closeResultPopup 1s ease;
+}
+
+@keyframes closeResultPopup {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=result-popup.css.map */

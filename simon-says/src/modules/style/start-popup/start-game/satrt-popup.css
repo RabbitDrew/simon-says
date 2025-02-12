@@ -1,0 +1,125 @@
+.start-title__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.start-title__wrapper .start-title {
+  font-size: 28px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+
+.start-level-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.start-level-list .level-list-item {
+  cursor: pointer;
+}
+.start-level-list .level-list-item .level-list-item-title {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  transition: color 0.5s ease-in-out;
+}
+.start-level-list .level-list-item .focus--color {
+  color: #ff9b36;
+}
+.start-level-list .level-list-item:hover .level-list-item-title {
+  color: #ff9b36;
+}
+
+.start-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.start-btn .start-btn-title {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+}
+
+.start-btn:hover {
+  background-color: #ff9b36;
+  border-color: #ff9b36;
+}
+
+.page-start {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: openStartPopup 1s ease;
+}
+.page-start .start__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}
+
+@keyframes openStartPopup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.anim-start--close {
+  animation: closeStartPopup 0.5s ease;
+}
+
+@keyframes closeStartPopup {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .page-start {
+    padding: 0 20px 0 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-start {
+    padding: 0 8px 0 8px;
+  }
+}
+
+/*# sourceMappingURL=satrt-popup.css.map */

@@ -1,0 +1,13 @@
+@use '../common/mixins' as *;
+.result-title__wrapper{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .result-title{
+        @include fontStyle (28px, 600, 1px, #ffffff)
+    }   
+}

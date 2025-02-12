@@ -1,0 +1,60 @@
+@use '../common/0-common.scss' as *;
+@import './options-level';
+
+.header-options {
+     display: flex;
+     flex: 1;
+     justify-content: start;
+     align-items: center;
+     gap: 10px;
+    .options-item {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 5px 0;
+        position: relative; //add drop down
+
+        cursor: pointer;
+        .option-item-title {
+            @include fontStyle (16px, 600, 1px, #ffffff);
+            transition: color .5s ease-in-out;
+        }
+       
+    }
+
+    .options-item:hover  .option-item-title{
+        color: #ff9b36;
+    }
+}
+
+.option--show {
+    animation: show .5s ease;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+ // rework 
+.option--hide {
+    animation: hide .5s ease forwards;
+    display: none;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        display: none; /* Полное скрытие */
+    }
+}

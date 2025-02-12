@@ -1,0 +1,62 @@
+@import './result-title';
+@import './result-score';
+@import './result-btn-next';
+
+
+.main-result{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba( 000, 000, 000, 0.5);
+
+    animation: openResultPopup 1s ease;
+
+    .result__win {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 20px;
+
+        padding: 30px;
+
+        border: 2px solid #ffffff;
+
+        border-radius: 5px;
+    }
+}
+
+
+@keyframes openResultPopup {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.main-result--close {
+    animation: closeResultPopup 1s ease;
+}
+
+@keyframes closeResultPopup {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+

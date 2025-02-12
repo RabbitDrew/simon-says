@@ -1,0 +1,40 @@
+@import './footer-items';
+
+.page-footer {
+    max-width: 1440px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 80px 10px 80px;
+
+    border-top: 2px solid #ff9b36;
+
+    .footer__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .page-footer {
+      padding: 0 20px 0 20px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .page-footer {
+      padding: 0 8px 0 8px;
+
+    }
+  
+  
+  
+  
+  }

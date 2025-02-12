@@ -1,0 +1,10 @@
+@use '../common/0-common.scss/' as* ;
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo-title {
+        @include fontStyle(36px, 600, 1px, #ffffff);
+    }
+}

@@ -1,0 +1,44 @@
+@use '../common/0-common.scss' as *;
+
+.main-info {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 40px;
+
+    .info-level {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        gap: 5px;
+   
+
+        .level-title {
+            @include fontStyle(23px, 600, 1px, #ffffff);
+        }
+
+        .level-subtitle {
+            @include fontStyle(18px, 600, 1px, #ffffff);
+            padding-bottom: 2px;
+        }
+    }
+
+    .info-round {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        gap: 5px;
+       
+        .round-title {
+            @include fontStyle(23px, 600, 1px, #ffffff);
+        }
+
+        .round-subtitle {
+            @include fontStyle(18px, 600, 1px, #ffffff);
+            padding-bottom: 2px;
+        }
+    }
+
+}

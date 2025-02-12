@@ -1,0 +1,11 @@
+@use '../../common/mixins' as *;
+.start-title__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+    .start-title {
+        @include fontStyle(28px, 600, 1px, #ffffff);
+    }
+}

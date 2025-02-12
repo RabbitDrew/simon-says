@@ -1,0 +1,39 @@
+@use '../common/0-common.scss' as *;
+
+.main-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .input-field {
+        width: 50%;
+        background: transparent;
+        border: none;
+        padding: 0 20px; 
+        @include fontStyle(18px, 600, 1px, #ffffff);
+    }
+
+    .input-field::placeholder {
+        text-align: center;
+        @include fontStyle(18px, 600, 1px, #ffffff);
+    } 
+
+    .input-field:focus {
+        outline: none;
+    }
+
+    .input-style-border {
+        width: 50%;
+        height: 2px;
+        background-color: #ffffff;
+        border-radius:20px ;
+        transition:  background-color .2s ease-in-out;
+    }
+
+
+    .input-field:focus + .input-style-border {
+        background-color: #ff9b36;
+    }
+}
+

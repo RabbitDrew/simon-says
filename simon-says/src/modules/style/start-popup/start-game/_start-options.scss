@@ -1,0 +1,29 @@
+@use '../../common/mixins' as *;
+
+.start-level-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    .level-list-item {
+        cursor: pointer;
+        .level-list-item-title {
+            @include fontStyle(18px, 600, 1px, #ffffff);
+            transition: color .5s ease-in-out;
+        }
+        .focus--color {
+            color: #ff9b36;
+        }
+    }
+
+    .level-list-item:hover  .level-list-item-title {
+        color: #ff9b36;
+    }
+
+}
+
+
+

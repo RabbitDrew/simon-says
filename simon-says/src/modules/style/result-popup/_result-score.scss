@@ -1,0 +1,14 @@
+@use '../common/mixins' as *;
+
+
+.result-score__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    .score-title  {
+        @include fontStyle (18px, 600, 1px, #ffffff)
+    }
+}

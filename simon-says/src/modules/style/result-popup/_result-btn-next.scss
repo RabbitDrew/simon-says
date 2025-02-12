@@ -1,0 +1,23 @@
+@use '../common/mixins' as *;
+
+.result-next-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px 10px;
+    
+    border: 1px solid #ffffff;
+
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    .next-btn-title {
+        @include fontStyle(18px, 600, 1px, #ffffff);
+    }
+}
+
+.result-next-btn:hover {
+    background-color: #ff9b36;
+    border-color: #ff9b36;
+}
